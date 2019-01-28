@@ -4,7 +4,7 @@ fenetre = Tk()
 fenetre.title("Test")
 
 def test():
-    pass
+    print('Hello World')
 
 btn_test = Button(fenetre, text="test", command=test)
 btn_test.pack()
