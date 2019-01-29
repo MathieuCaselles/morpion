@@ -3,10 +3,13 @@ from tkinter import *
 fenetre = Tk()
 fenetre.title("Test")
 
-def test():
-    print('Hello World')
+def test(i, j):
+    print(i, ' ' ,j)
 
-btn_test = Button(fenetre, text="test", command=test)
-btn_test.pack()
+for i in range (3):
+    for j in range (3):
+        A = lambda i= i, j=j: test(i, j)
+        btn_test = Button(fenetre, text="test", command=test(i, j), width = 7, height = 3)
+        btn_test.grid(row = i, column = j)
 
 fenetre.mainloop()
