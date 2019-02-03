@@ -24,7 +24,6 @@ def bouger_carre_right(event):
 fenetre.bind("<Left>", bouger_carre_left)
 fenetre.bind("<Right>", bouger_carre_right)
 
-
 obstacles = []
 
 def deplacement_obstacle():
